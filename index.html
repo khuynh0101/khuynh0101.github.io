@@ -5,9 +5,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="scroll.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
+    <button class="nav-menu-toggle" onclick="toggleMenu()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+      </svg>
+    </button>
+    <div class="nav-menu">
+      <h1>Khuong Huynh</h1>
+      <ul class="nav-content">
+        <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact-me" onclick="toggleMenu()">Contact Me</a></li>
+      </ul>
+    </div>
     <div class="container">
       <aside class="nav">
         <div style="position: fixed;">
@@ -15,7 +34,7 @@
           <ul class="nav-content">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
           </ul>
         </div>
       </aside>
