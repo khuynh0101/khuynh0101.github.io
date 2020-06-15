@@ -1,5 +1,5 @@
 html {
-  font-size: 12px;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;  
@@ -60,7 +60,7 @@ button{
 .nav-menu{
   position: fixed;
   top: 0px;
-  left: -190px;
+  right: -200px;
   width: 160px;
   height: 100vh;
   padding: 20px 10px 0 10px;
@@ -70,7 +70,7 @@ button{
 .nav-menu-toggle{
   position: fixed;
   top: 0px;
-  left: 0px;
+  right: 0px;
   margin:3;
   z-index:100;
   display: block;
@@ -88,7 +88,7 @@ button{
 
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
   .nav{
     display: block;
@@ -102,7 +102,7 @@ button{
 }
 @media only screen and (min-width: 1024px) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
   .nav{
     display: block;
@@ -116,7 +116,7 @@ button{
 }
 @media only screen and (min-width: 2048px) {
   html {
-    font-size: 18px;
+    font-size: 22px;
   }
   .nav{
     display: block;
@@ -130,11 +130,11 @@ button{
 }
 
 @keyframes menu-open{
-  0% {transform:translateX(-190px)}
-  100% {transform:translateX(190px)}
+  0% {transform:translateX(300px)}
+  100% {transform:translateX(-200px)}
 }
 
 @keyframes menu-close{
-  0% {transform:translateX(190px)}
-  100% {transform:translateX(-190px)}
+  0% {transform:translateX(-200px)}
+  100% {transform:translateX(300px)}
 }
