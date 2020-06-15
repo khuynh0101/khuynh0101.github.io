@@ -84,7 +84,7 @@ button{
   animation: menu-close 1s;
   animation-fill-mode: forwards;
 }
-
+/*   
 @media only screen and (min-width: 768px) {
   html {
     font-size: 18px;
@@ -126,7 +126,7 @@ button{
   .nav-menu-toggle{
     display: none;
   }
-}
+} */
 
 @keyframes menu-open{
   0% {transform:translateX(300px)}
