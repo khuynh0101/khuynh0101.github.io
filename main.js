@@ -15,14 +15,19 @@ function init() {
 
 function toggleMenu() {
   const menu = document.querySelector('.sidebar');
+  svgPath = document.querySelector('.toggleImage');
   //open menu
   if (
     menu.className === 'sidebar' ||
     menu.className === 'sidebar sidebar-menu-close'
   ) {
     menu.className = 'sidebar sidebar-menu-open';
+    svgPath.className.baseVal = 'toggleImage toggle-open';
+    svgPath.className.animVal = 'toggleImage toggle-open';
   } else if (menu.className === 'sidebar sidebar-menu-open') {
     menu.className = 'sidebar sidebar-menu-close';
+    svgPath.className.baseVal = 'toggleImage toggle-close';
+    svgPath.className.animVal = 'toggleImage toggle-close';
   }
 }
 function handleSideBarContentClick(content) {

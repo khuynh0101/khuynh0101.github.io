@@ -17,13 +17,16 @@
         width="24"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        <path class="toggleImage toggle-close" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
       </svg>
     </button>
     <div class="container">
       <aside class="sidebar">
         <div class="sidebar-content">
           <h1>Khuong Huynh</h1>
+          <p class="sidebar-content-intro">
+            Hi, I'm a web developer. Welcome to my personal website!
+          </p>
           <ul class="sidebar-content-item">
             <li>
               <a
@@ -38,9 +41,13 @@
                 >Projects</a
               >
             </li>
+
+            <li>
+              <a href="#resume">Resume</a>
+            </li>
             <li>
               <a href="#contact-me" onclick="handleSideBarContentClick(this)"
-                >Contact Me</a
+                >Contact</a
               >
             </li>
           </ul>
@@ -54,15 +61,17 @@
 
             <p>
               I have almost 20 years of experience as a backend engineer
-              specializing with Microsoft ASP.NET, ASP.NET Web APIs, Entity
-              Framework and C# programming language. I also have experience with
-              XML/XSLT and MSSQL.
+              specializing in Microsoft ASP.NET, ASP.NET Web APIs, Entity
+              Framework and C#. I also have experience with XML/XSLT and MSSQL.
             </p>
 
             <p>
               While I have experience in backend programming, I am working on
               becoming fullstack by learning ES6, CSS and React.js.
             </p>
+            <a href="#projects" class="link-button about-me-projects"
+              ><span class="about-me-projects-text">View Projects</span></a
+            >
           </div>
         </div>
         <div class="content">

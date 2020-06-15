@@ -16,6 +16,7 @@ body {
 h1 {
   font-size: 1rem;
   letter-spacing: 1px;
+  color: #f0f0f0;
 }
 a {
   text-decoration: none;
@@ -26,10 +27,10 @@ a {
 }
 a:hover {
   color: #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
 }
 .active {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
 }
 button {
   border: none;
@@ -37,13 +38,26 @@ button {
   cursor: pointer;
   background: none;
 }
+.link-button {
+  text-transform: none;
+  padding: 12px;
+  background: #57b68a;
+  border-radius: 16px;
+}
+.link-button:hover {
+  background: #418a68;
+}
+.link-button:active {
+  position: relative;
+  top: 1px;
+}
 .container {
   display: flex;
   min-height: 100vh;
 }
 .sidebar {
   width: 8.4rem;
-  background: #888888;
+  background: #57b68a;
   position: fixed;
   top: 0px;
   right: -200px;
@@ -52,6 +66,13 @@ button {
 }
 .sidebar-content {
   position: fixed;
+}
+.sidebar-content-intro {
+  width: 160px;
+  font-size: 0.7rem;
+  color: #f0f0f0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(240, 240, 240, 0.3);
 }
 .sidebar-content-item {
   list-style-type: none;
@@ -82,14 +103,20 @@ button {
 }
 
 .sidebar-menu-open {
-  animation: menu-open 1s;
+  animation: menu-open .5s;
   animation-fill-mode: forwards;
 }
 .sidebar-menu-close {
-  animation: menu-close 1s;
+  animation: menu-close .5s;
   animation-fill-mode: forwards;
 }
-
+.toggle-close {
+  fill: #57b68a;
+}
+.toggle-open
+{
+  fill: #f0f0f0;
+}
 @media (min-width: 768px) {
   html {
     font-size: 18px;
@@ -100,9 +127,6 @@ button {
     position: static;
     display: block;
     height: auto;
-  }
-  .sidebar-content-item {
-    padding: 24px 0 0 0;
   }
   .sidebar-menu,
   .sidebar-menu-toggle {
@@ -125,9 +149,6 @@ button {
     display: block;
     height: auto;
   }
-  .sidebar-content-item {
-    padding: 24px 0 0 0;
-  }
   .sidebar-menu,
   .sidebar-menu-toggle {
     display: none;
@@ -147,9 +168,6 @@ button {
     position: static;
     display: block;
     height: auto;
-  }
-  .sidebar-content-item {
-    padding: 24px 0 0 0;
   }
   .sidebar-menu,
   .sidebar-menu-toggle {
