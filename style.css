@@ -1,23 +1,27 @@
 html {
-  font-size: 24px;
+  font-size: 20px;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 h1 {
   font-size: 1rem;
-  color: rgb(3, 3, 71);
 }
 a {
+  display: block;
   text-decoration: none;
-  color: rgb(3, 3, 71);
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: rgb(85, 85, 88);
+  border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: rgb(88, 88, 197);
+  color: rgb(128, 128, 131);
+  border-bottom: 1px solid rgb(128, 128, 131);
 }
 button {
   border: none;
@@ -33,6 +37,7 @@ button {
   width: 8.4rem;
   padding: 0 8rem 0 2.5rem;
   display: none;
+  background:#c5c0c0;
 }
 .nav-content {
   list-style-type: none;
@@ -53,9 +58,9 @@ button {
   padding-top: 5.25rem;
 }
 
-.contents div:nth-child(even) {
+/* .contents div:nth-child(even) {
   background: #f1f1f1;
-}
+} */
 
 .nav-menu {
   position: fixed;
@@ -84,22 +89,8 @@ button {
   animation: menu-close 1s;
   animation-fill-mode: forwards;
 }
-@media only screen and (min-device-width: 320px) {
-  html {
-    font-size: 24px;
-  }
-  .nav {
-    display: none;
-  }
-  .nav-menu {
-    display: block;
-  }
-  .nav-menu-toggle {
-    display: block;
-  }
-}
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 1024px) {
   html {
     font-size: 24px;
   }
@@ -113,23 +104,9 @@ button {
     display: none;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media (min-width: 2048px) {
   html {
     font-size: 26px;
-  }
-  .nav {
-    display: block;
-  }
-  .nav-menu {
-    display: none;
-  }
-  .nav-menu-toggle {
-    display: none;
-  }
-}
-@media only screen and (min-width: 2048px) {
-  html {
-    font-size: 28px;
   }
   .nav {
     display: block;
