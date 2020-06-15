@@ -85,21 +85,6 @@ button{
   animation-fill-mode: forwards;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  html {
-    font-size: 18px;
-  }
-  .nav{
-    display: none;
-  }
-  .nav-menu{
-    display: block;
-  }
-  .nav-menu-toggle{
-    display: block;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   html {
     font-size: 18px;
