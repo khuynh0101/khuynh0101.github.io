@@ -99,6 +99,7 @@ img{
 .about-me{
   height:100vh;
 }
+
 .sidebar-menu-toggle {
   position: fixed;
   top: 0px;
@@ -125,12 +126,13 @@ img{
 }
 
 .projects > p:not(:first-child){ 
-  padding-top:24px;
+  padding-top:40px;
 }
 
 .projects-heading-flex{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
