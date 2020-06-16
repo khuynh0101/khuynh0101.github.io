@@ -17,7 +17,10 @@
         width="24"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
-        <path class="toggleImage toggle-close" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        <path
+          class="toggleImage toggle-close"
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
       </svg>
     </button>
     <div class="container">
@@ -37,40 +40,46 @@
               >
             </li>
             <li class="sidebar-content-item">
-             <a href="#projects" onclick="handleSideBarContentClick(this)">Projects
-			  <ul class="sidebar-content-items">
-				<li class="sidebar-content-item-submenu">
-					<a href="#.net-projects" onclick="handleSideBarContentClick(this)"
-						>.Net Projects</a
-					>
-				</li>
-				<li class="sidebar-content-item-submenu">
-					<a href="#react-projects" onclick="handleSideBarContentClick(this)"
-						>React Projects</a
-					>
-				</li>
-			  </ul>
+              <a href="#projects" onclick="handleSideBarContentClick(this)"
+                >Projects</a
+              >
+              <ul class="sidebar-content-items">
+                <li class="sidebar-content-item-submenu">
+                  <a
+                    href="#.net-projects"
+                    onclick="handleSideBarContentClick(this)"
+                    >.Net Projects</a
+                  >
+                </li>
+                <li class="sidebar-content-item-submenu">
+                  <a
+                    href="#react-projects"
+                    onclick="handleSideBarContentClick(this)"
+                    >React Projects</a
+                  >
+                </li>
+              </ul>
             </li>
 
             <li class="sidebar-content-item">
               <a href="./assets/pdfs/khuong_huynh_resume.pdf">Resume</a>
             </li>
             <li class="sidebar-content-item">
-              <a href="mailto:khuynh0101@gmail.com"
-                >Contact</a
-              >
-			  <ul class="sidebar-content-items">
-				<li class="sidebar-content-item-submenu">
-					<a target="_blank" href="mailto:khuynh0101@gmail.com"
-						>Email</a
-					>
-				</li>
-				<li class="sidebar-content-item-submenu">
-					<a target="_blank" href="https://www.linkedin.com/in/khuonghuynh/"
-						>LinkedIn</a
-					>
-				</li>
-			  </ul>
+              <a href="mailto:khuynh0101@gmail.com">Contact</a>
+              <ul class="sidebar-content-items">
+                <li class="sidebar-content-item-submenu">
+                  <a target="_blank" href="mailto:khuynh0101@gmail.com"
+                    >Email</a
+                  >
+                </li>
+                <li class="sidebar-content-item-submenu">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/khuonghuynh/"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -98,38 +107,59 @@
         </div>
         <div class="content">
           <div id="projects" class="projects">
-			<div id=".net-projects" class="project">
-				<h2>.Net Projects</h2>
-				<h3>AllianceBernstein - Mutual Fund Overview</h3>
-				<img src="assets/images/AB_1.png">
-				<hr/>
-				<h3>AllianceBernstein - Mutual Fund Literatures</h3>
-				<img src="assets/images/AB_2.png">
-				<hr/>
-				<h3 class="projects-heading-flex">AllianceBernstein - Mutual Fund Detail Page <a class="link-button" href="./assets/pdfs/complete_fund_detail.pdf">View full report</a></h3>
-				<img src="assets/images/AB_3.png">
-				<hr/>
-				<h3>AllianceBernstein - Blog Home Page </h3>
-				<img src="assets/images/AB_4.png">
-				<hr/>
-				<h3 class="projects-heading-flex">AllianceBernstein - Taiwan Home Page <a class="link-button" href="./assets/pdfs/complete_taiwan_homepage.pdf">View full report</a></h3>
-				<img src="assets/images/AB_5.png">
-				<hr/>
-				<h3 class="projects-heading-flex">AllianceBernstein - Taiwan Fund Detail Page <a class="link-button" href="./assets/pdfs/complete_taiwan_fund_detail.pdf">View full report</a></h3>
-				<img src="assets/images/AB_6.png">
-				<hr/>
-			</div>
-			<div id="react-projects">
-			<h2>React Projects</h2>
-			<h3 class="projects-heading-flex">To-Do List <a class="link-button" href="#">View page</a></h3></h3>
-			</div>
+            <div id=".net-projects" class="project">
+              <h2>.Net Projects</h2>
+              <h3>AllianceBernstein - Mutual Fund Overview</h3>
+              <img src="assets/images/AB_1.png" />
+              <hr />
+              <h3>AllianceBernstein - Mutual Fund Literatures</h3>
+              <img src="assets/images/AB_2.png" />
+              <hr />
+              <h3 class="projects-heading-flex">
+                AllianceBernstein - Mutual Fund Detail Page
+                <a
+                  class="link-button"
+                  href="./assets/pdfs/complete_fund_detail.pdf"
+                  >View full report</a
+                >
+              </h3>
+              <img src="assets/images/AB_3.png" />
+              <hr />
+              <h3>AllianceBernstein - Blog Home Page</h3>
+              <img src="assets/images/AB_4.png" />
+              <hr />
+              <h3 class="projects-heading-flex">
+                AllianceBernstein - Taiwan Home Page
+                <a
+                  class="link-button"
+                  href="./assets/pdfs/complete_taiwan_homepage.pdf"
+                  >View full report</a
+                >
+              </h3>
+              <img src="assets/images/AB_5.png" />
+              <hr />
+              <h3 class="projects-heading-flex">
+                AllianceBernstein - Taiwan Fund Detail Page
+                <a
+                  class="link-button"
+                  href="./assets/pdfs/complete_taiwan_fund_detail.pdf"
+                  >View full report</a
+                >
+              </h3>
+              <img src="assets/images/AB_6.png" />
+              <hr />
+            </div>
+
+            <div id="react-projects">
+              <h2>React Projects</h2>
+              <h3 class="projects-heading-flex">
+                To-Do List <a class="link-button" href="#">View page</a>
+              </h3>
+              <img src="assets/images/react_1.png" />
+              <hr />
+            </div>
           </div>
         </div>
-        <!-- <div class="content">
-          <div id="contact" class="contact">
-            <p>Feel free to contact me at <a href="mailto:khuynh0101@gmail.com">khuynh0101@gmail.com</a> or via <a href="https://www.linkedin.com/in/khuonghuynh/">LinkedIn</a></p>
-          </div>
-        </div> -->
       </article>
     </div>
   </body>
