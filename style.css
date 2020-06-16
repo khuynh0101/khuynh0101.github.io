@@ -18,6 +18,19 @@ h1 {
   letter-spacing: 1px;
   color: #f0f0f0;
 }
+h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #57b68a;
+  padding: 0;
+}
+h3 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding: 0;
+  margin: 10px 0 10px 5px;
+}
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -38,13 +51,23 @@ button {
   cursor: pointer;
   background: none;
 }
-img{
-  width:100%;
-  height:auto;
+img {
+  width: 100%;
+  height: auto;
 }
+
+/* Gradient color1 - color2 - color1 */
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #57b68a;
+  background-image: linear-gradient(to right, #ccc, #57b68a, #ccc);
+}
+
 .link-button {
   text-transform: none;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background: #57b68a;
   border-radius: 8px;
   text-align: center;
@@ -78,26 +101,36 @@ img{
   color: #f0f0f0;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(240, 240, 240, 0.3);
+  display: none;
 }
-.sidebar-content-item {
+.sidebar-content-items {
   list-style-type: none;
   margin: 0;
   padding: 8px 0 0 0;
 }
 
-.sidebar-content-item li {
+.sidebar-content-item {
   padding: 0.5rem 0;
+}
+.sidebar-content-item-submenu {
+  padding-left: 1.5rem;
 }
 .content {
   padding-left: 3rem;
+  width: 80%;
 }
 
-.content div {
-  width: 80%;  
-  padding: 5.25rem 0 40px 0;
+/* .content div { */
+/* width: 80%;   */
+/* padding: 5.25rem 0 40px 0; */
+/* } */
+.about-me {
+  height: 100vh;
 }
-.about-me{
-  height:100vh;
+
+.about-me,
+.content {
+  padding-top: 5rem;
 }
 
 .sidebar-menu-toggle {
@@ -110,26 +143,28 @@ img{
 }
 
 .sidebar-menu-open {
-  animation: menu-open .5s;
+  animation: menu-open 0.5s;
   animation-fill-mode: forwards;
 }
 .sidebar-menu-close {
-  animation: menu-close .5s;
+  animation: menu-close 0.5s;
   animation-fill-mode: forwards;
 }
 .toggle-close {
   fill: #57b68a;
 }
-.toggle-open
-{
+.toggle-open {
   fill: #f0f0f0;
 }
 
-.projects > p:not(:first-child){ 
-  padding-top:40px;
+.project {
+  padding-top: 5rem;
 }
+/* .projects > p:not(:first-child){  */
+/* padding-top:40px; */
+/* } */
 
-.projects-heading-flex{
+.projects-heading-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +188,9 @@ img{
   .sidebar-menu-open,
   .sidebar-menu-close {
     animation: none;
+  }
+  .sidebar-content-intro {
+    display: block;
   }
 }
 
