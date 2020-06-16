@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css?d=6152020" />
     <script src="main.js"></script>
   </head>
-  <body onload="init()">
-    <button class="sidebar-menu-toggle" onclick="toggleMenu()">
+  <body onload="init()" onclick="closeMobileSideBarMenu()">
+    <button class="image-button sidebar-menu-toggle" onclick="toggleMenu()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="24"
@@ -32,10 +32,7 @@
           </p>
           <ul class="sidebar-content-items">
             <li class="sidebar-content-item">
-              <a
-                href="#about-me"
-                class="active"
-                onclick="handleSideBarContentClick(this)"
+              <a href="#about-me" onclick="handleSideBarContentClick(this)"
                 >About Me</a
               >
             </li>
@@ -86,7 +83,7 @@
       </aside>
       <article class="contents">
         <div class="content">
-          <div id="about-me" class="about-me">
+          <div id="about-me" class="about-me padding-top-spacing">
             <p>Hello, my name is Khuong.</p>
             <p>I am a web developer from New York City.</p>
 
@@ -100,14 +97,14 @@
               While I have experience in backend programming, I am working on
               becoming fullstack by learning ES6, CSS and React.js.
             </p>
-            <a href="#projects" class="link-button about-me-projects"
-              ><span class="about-me-projects-text">View Projects</span></a
+            <a href="#projects" class="link-button"
+              ><span>View Projects</span></a
             >
           </div>
         </div>
         <div class="content">
           <div id="projects" class="projects">
-            <div id=".net-projects" class="project">
+            <div id=".net-projects" class="padding-top-spacing">
               <h2>.Net Projects</h2>
               <h3>AllianceBernstein - Mutual Fund Overview</h3>
               <img src="assets/images/AB_1.png" />
@@ -115,9 +112,10 @@
               <h3>AllianceBernstein - Mutual Fund Literatures</h3>
               <img src="assets/images/AB_2.png" />
               <hr />
-              <h3 class="projects-heading-flex">
+              <h3 class="project-heading-flex">
                 AllianceBernstein - Mutual Fund Detail Page
                 <a
+                  target="_blank"
                   class="link-button"
                   href="./assets/pdfs/complete_fund_detail.pdf"
                   >View full report</a
@@ -128,9 +126,10 @@
               <h3>AllianceBernstein - Blog Home Page</h3>
               <img src="assets/images/AB_4.png" />
               <hr />
-              <h3 class="projects-heading-flex">
+              <h3 class="project-heading-flex">
                 AllianceBernstein - Taiwan Home Page
                 <a
+                  target="_blank"
                   class="link-button"
                   href="./assets/pdfs/complete_taiwan_homepage.pdf"
                   >View full report</a
@@ -138,9 +137,10 @@
               </h3>
               <img src="assets/images/AB_5.png" />
               <hr />
-              <h3 class="projects-heading-flex">
+              <h3 class="project-heading-flex">
                 AllianceBernstein - Taiwan Fund Detail Page
                 <a
+                  target="_blank"
                   class="link-button"
                   href="/assets/pdfs/complete_taiwan_fund_detail.pdf"
                   >View full report</a
@@ -150,10 +150,11 @@
               <hr />
             </div>
 
-            <div id="react-projects">
+            <div id="react-projects" class="padding-top-spacing">
               <h2>React Projects</h2>
-              <h3 class="projects-heading-flex">
-                To-Do List <a class="link-button" href="/react/todo/">View page</a>
+              <h3 class="project-heading-flex">
+                To-Do List
+                <a class="link-button" href="/react/todo/">View page</a>
               </h3>
               <img src="assets/images/react_1.png" />
               <hr />
