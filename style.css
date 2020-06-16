@@ -94,7 +94,7 @@ img{
 
 .content div {
   width: 80%;  
-  padding-top: 5.25rem;
+  padding: 5.25rem 0 40px 0;
 }
 .about-me{
   height:100vh;
