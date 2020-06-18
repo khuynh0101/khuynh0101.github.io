@@ -4,8 +4,7 @@ function init() {
       const hash = window.location.hash;
       const contentItems = document.querySelectorAll('.sidebar-content-item a');
       contentItems.forEach(function (contentItem) {
-        if (contentItem.hash === hash) contentItem.className = 'link-active';
-        else contentItem.className = '';
+        setActiveLink(contentItem, hash);
       });
     }
   } catch (exception) {}
@@ -13,8 +12,7 @@ function init() {
 
 function closeMobileSideBarMenu() {
   const menu = document.querySelector('.sidebar-menu-open');
-  if (menu)
-    toggleMenu();
+  if (menu) toggleMenu();
 }
 
 function toggleMenu() {
@@ -42,8 +40,17 @@ function handleSideBarContentClick(content) {
 
   const contentItems = document.querySelectorAll('.sidebar-content-item a');
   contentItems.forEach(function (contentItem) {
-    if (contentItem.hash === content.hash)
-      contentItem.className = 'link-active';
-    else contentItem.className = '';
+    setActiveLink(contentItem, content.hash);
   });
+}
+
+function setActiveLink(contentItem, contentHash)
+{
+  if (contentItem.hash === contentHash)
+    contentItem.classList.add('link-active');
+  else 
+  contentItem.classList.remove('link-active');
+    // if (contentItem.className === 'sub-link')
+    //   contentItem.className = 'sub-link link-active';
+    // else contentItem.className = 'link-active';
 }
